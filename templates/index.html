@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Wecome to Flask</h1>
+<br>
+<p>Click <a href="/logout">here</a> to logout.</p>
+<h3>User:</h3>
+<br>
+{% for user in data %}
+    <li><strong>{{user.name}}:</strong> {{user.email}}</li>
+    <br>
+{% endfor %}
+
+{% endblock %}
